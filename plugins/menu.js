@@ -26,7 +26,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-╭─「 %me 🤖」
+╭─「 NdaaBotz-MD 🤖」
 │ 👋🏻 Hai, %name!
 │
 │ 🧱 Limit : *%limit Limit*
@@ -45,7 +45,7 @@ const defaultMenu = {
   body: '│ • %cmd %islimit %isPremium',
   footer: '╰────\n',
   after: `
-*%npmname* | %version
+*NdaaBotz-MD* | %version
 ${'```%npmdesc```'}
 `,
 }
@@ -148,7 +148,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './src/avatar_contact.png')
-    conn.sendHydrated(m.chat, text.trim(), author, pp, 'https://github.com/ZaBot-MD/zabotv7', 'Github', owner[0][0], 'Owner', [
+    conn.sendHydrated(m.chat, text.trim(), author, pp, 'https://github.com/NdaaXD', 'Github', owner[0][0], 'Owner', [
       ['Donate', '/donasi'],
       ['Speed', '/ping'],
       ['Owner', '/owner']
