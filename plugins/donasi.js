@@ -1,6 +1,6 @@
 let handler =  m => m.reply(`
 ╭─「 Donasi • Pulsa 」
-│ • Bot Gratis
+│ • 6282145614361
 │ • 
 ╰────
 
